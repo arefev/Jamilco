@@ -226,126 +226,71 @@
 				<div class="why-more"><a href="/about-company/" title="О компании">Узнать больше о нас</a></div>
 			</div>
 		</div>
-		<div class="brands">
-			<div class="container">
-				<p class="h1">Бренды</p>
-				<div class="brands-wrap">
-					<div class="row brand-images">
-						<div class="col-xs-3 p0">
-							<div class="brand-item">
-								<a href="#">
-									<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH?>/img/gray_brands_logos/1.png" alt=""/>
-									<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH?>/img/white_brands_logos/1.png" alt=""/>
-									<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH?>/img/brands_hovers/1.png" alt=""/>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-3 p0">
-							<div class="brand-item">
-								<a href="#">
-									<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH?>/img/gray_brands_logos/2.png" alt=""/>
-									<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH?>/img/white_brands_logos/2.png" alt=""/>
-									<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH?>/img/brands_hovers/2.png" alt=""/>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-3 p0">
-							<div class="brand-item">
-								<a href="#">
-									<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH?>/img/gray_brands_logos/3.png" alt=""/>
-									<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH?>/img/white_brands_logos/3.png" alt=""/>
-									<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH?>/img/brands_hovers/3.png" alt=""/>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-3 p0">
-							<div class="brand-item">
-								<a href="#">
-									<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH?>/img/gray_brands_logos/4.png" alt=""/>
-									<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH?>/img/white_brands_logos/4.png" alt=""/>
-									<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH?>/img/brands_hovers/4.png" alt=""/>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-3 p0">
-							<div class="brand-item">
-								<a href="#">
-									<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH?>/img/gray_brands_logos/5.png" alt=""/>
-									<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH?>/img/white_brands_logos/5.png" alt=""/>
-									<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH?>/img/brands_hovers/5.png" alt=""/>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-3 p0">
-							<div class="brand-item">
-								<a href="#">
-									<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH?>/img/gray_brands_logos/6.png" alt=""/>
-									<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH?>/img/white_brands_logos/6.png" alt=""/>
-									<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH?>/img/brands_hovers/6.png" alt=""/>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-3 p0">
-							<div class="brand-item">
-								<a href="#">
-									<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH?>/img/gray_brands_logos/7.png" alt=""/>
-									<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH?>/img/white_brands_logos/7.png" alt=""/>
-									<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH?>/img/brands_hovers/7.png" alt=""/>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-3 p0">
-							<div class="brand-item">
-								<a href="#">
-									<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH?>/img/gray_brands_logos/8.png" alt=""/>
-									<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH?>/img/white_brands_logos/8.png" alt=""/>
-									<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH?>/img/brands_hovers/8.png" alt=""/>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-3 p0">
-							<div class="brand-item">
-								<a href="#">
-									<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH?>/img/gray_brands_logos/9.png" alt=""/>
-									<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH?>/img/white_brands_logos/9.png" alt=""/>
-									<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH?>/img/brands_hovers/9.png" alt=""/>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-3 p0">
-							<div class="brand-item">
-								<a href="#">
-									<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH?>/img/gray_brands_logos/10.png" alt=""/>
-									<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH?>/img/white_brands_logos/10.png" alt=""/>
-									<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH?>/img/brands_hovers/10.png" alt=""/>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-3 p0">
-							<div class="brand-item">
-								<a href="#">
-									<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH?>/img/gray_brands_logos/11.png" alt=""/>
-									<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH?>/img/white_brands_logos/11.png" alt=""/>
-									<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH?>/img/brands_hovers/11.png" alt=""/>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-3 p0">
-							<div class="brand-item">
-								<a href="#">
-									<img class="brand-logo" src="<?=SITE_TEMPLATE_PATH?>/img/gray_brands_logos/12.png" alt=""/>
-									<img class="brand-logo-white" src="<?=SITE_TEMPLATE_PATH?>/img/white_brands_logos/12.png" alt=""/>
-									<img class="brand-hover" src="<?=SITE_TEMPLATE_PATH?>/img/brands_hovers/12.png" alt=""/>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="submit">
-					<a href="#">Все бренды</a>
-				</div>
-			</div>
-		</div>
+		
+		<?$APPLICATION->IncludeComponent(
+			"bitrix:news.list", 
+			"brands", 
+			array(
+				"IBLOCK_TYPE" => "content",
+				"IBLOCK_ID" => "4",
+				"NEWS_COUNT" => "12",
+				"SORT_BY1" => "ACTIVE_FROM",
+				"SORT_ORDER1" => "DESC",
+				"SORT_BY2" => "SORT",
+				"SORT_ORDER2" => "ASC",
+				"FILTER_NAME" => "",
+				"FIELD_CODE" => array(
+					0 => "",
+					1 => "",
+				),
+				"PROPERTY_CODE" => array(
+					0 => "",
+					1 => "LOGO",
+					2 => "LOGO_HOVER",
+					3 => "LOGO_PICTURE",
+					4 => "",
+				),
+				"CHECK_DATES" => "Y",
+				"DETAIL_URL" => "",
+				"AJAX_MODE" => "N",
+				"AJAX_OPTION_JUMP" => "N",
+				"AJAX_OPTION_STYLE" => "Y",
+				"AJAX_OPTION_HISTORY" => "N",
+				"CACHE_TYPE" => "A",
+				"CACHE_TIME" => "36000000",
+				"CACHE_FILTER" => "N",
+				"CACHE_GROUPS" => "Y",
+				"PREVIEW_TRUNCATE_LEN" => "",
+				"ACTIVE_DATE_FORMAT" => "d.m.Y",
+				"SET_TITLE" => "N",
+				"SET_BROWSER_TITLE" => "N",
+				"SET_META_KEYWORDS" => "N",
+				"SET_META_DESCRIPTION" => "N",
+				"SET_STATUS_404" => "N",
+				"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+				"ADD_SECTIONS_CHAIN" => "N",
+				"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+				"PARENT_SECTION" => "",
+				"PARENT_SECTION_CODE" => "",
+				"INCLUDE_SUBSECTIONS" => "N",
+				"DISPLAY_DATE" => "N",
+				"DISPLAY_NAME" => "Y",
+				"DISPLAY_PICTURE" => "Y",
+				"DISPLAY_PREVIEW_TEXT" => "Y",
+				"PAGER_TEMPLATE" => ".default",
+				"DISPLAY_TOP_PAGER" => "N",
+				"DISPLAY_BOTTOM_PAGER" => "N",
+				"PAGER_TITLE" => "Новости",
+				"PAGER_SHOW_ALWAYS" => "N",
+				"PAGER_DESC_NUMBERING" => "N",
+				"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+				"PAGER_SHOW_ALL" => "Y",
+				"DISPLAY_TITLE" => "Y",
+				"AJAX_OPTION_ADDITIONAL" => ""
+			),
+			false
+		);?>
+		
 		<div class="career">
 			<div class="container">
 				<div class="career-inner">
@@ -357,49 +302,66 @@
 				</div>
 			</div>
 		</div>
-		<div class="news">
-			<div class="container">
-				<p class="h1">Новости</p>
-				<div class="news-wrap">
-					<div class="news-item-wrap">
-						<div class="news-item">
-							<a href="#">
-								<div class="news-img"><img src="<?=SITE_TEMPLATE_PATH?>/img/n1.jpg" alt=""/></div>
-								<div class="news-text">
-									<div class="news-title">разве СЕЗОН ЮБОК КОНЧИЛСЯ?</div>
-									<div class="news-preview">Пора узнать, какие юбки будут в моде этой осенью!</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="news-item-wrap">
-						<div class="news-item">
-							<a href="#">
-								<div class="news-img"><img src="<?=SITE_TEMPLATE_PATH?>/img/n2.jpg" alt=""/></div>
-								<div class="news-text">
-									<div class="news-title">ЦВЕТА ОСЕННЕГО СЕЗОНА!</div>
-									<div class="news-preview">Еще не знаете осенние тенденции? Мы подскажем!</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="news-item-wrap">
-						<div class="news-item">
-							<a href="#">
-								<div class="news-img"><img src="<?=SITE_TEMPLATE_PATH?>/img/n3.jpg" alt=""/></div>
-								<div class="news-text">
-									<div class="news-title">ВСТРЕЧАЕМ ОСЕНЬ 2014 МОДНО!</div>
-									<div class="news-preview">Какие тенденции наблюдаются этой осенью?</div>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="submit">
-					<a href="#">Все новости</a>
-				</div>
-			</div>
-		</div>
+		<?$APPLICATION->IncludeComponent(
+			"bitrix:news.list", 
+			"news", 
+			array(
+				"IBLOCK_TYPE" => "news",
+				"IBLOCK_ID" => "1",
+				"NEWS_COUNT" => "10",
+				"SORT_BY1" => "ACTIVE_FROM",
+				"SORT_ORDER1" => "DESC",
+				"SORT_BY2" => "SORT",
+				"SORT_ORDER2" => "ASC",
+				"FILTER_NAME" => "",
+				"FIELD_CODE" => array(
+					0 => "DETAIL_PICTURE",
+					1 => "",
+				),
+				"PROPERTY_CODE" => array(
+					0 => "",
+					1 => "",
+				),
+				"CHECK_DATES" => "Y",
+				"DETAIL_URL" => "",
+				"AJAX_MODE" => "N",
+				"AJAX_OPTION_JUMP" => "N",
+				"AJAX_OPTION_STYLE" => "Y",
+				"AJAX_OPTION_HISTORY" => "N",
+				"CACHE_TYPE" => "A",
+				"CACHE_TIME" => "36000000",
+				"CACHE_FILTER" => "N",
+				"CACHE_GROUPS" => "Y",
+				"PREVIEW_TRUNCATE_LEN" => "",
+				"ACTIVE_DATE_FORMAT" => "d.m.Y",
+				"SET_TITLE" => "N",
+				"SET_BROWSER_TITLE" => "N",
+				"SET_META_KEYWORDS" => "N",
+				"SET_META_DESCRIPTION" => "N",
+				"SET_STATUS_404" => "N",
+				"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+				"ADD_SECTIONS_CHAIN" => "N",
+				"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+				"PARENT_SECTION" => "",
+				"PARENT_SECTION_CODE" => "",
+				"INCLUDE_SUBSECTIONS" => "N",
+				"DISPLAY_DATE" => "N",
+				"DISPLAY_NAME" => "Y",
+				"DISPLAY_PICTURE" => "Y",
+				"DISPLAY_PREVIEW_TEXT" => "Y",
+				"PAGER_TEMPLATE" => ".default",
+				"DISPLAY_TOP_PAGER" => "N",
+				"DISPLAY_BOTTOM_PAGER" => "N",
+				"PAGER_TITLE" => "Новости",
+				"PAGER_SHOW_ALWAYS" => "N",
+				"PAGER_DESC_NUMBERING" => "N",
+				"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+				"PAGER_SHOW_ALL" => "Y",
+				"DISPLAY_TITLE" => "Y",
+				"AJAX_OPTION_ADDITIONAL" => ""
+			),
+			false
+		);?>
 	<? else: ?>
 		<div class="container">
 			<h1><?$APPLICATION->ShowTitle(false)?></h1>
