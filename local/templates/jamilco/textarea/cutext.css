@@ -1,0 +1,117 @@
+.cuTextWrap{
+	width:400px;
+	background:none;
+	color:#000;
+	padding:3px 3px 10px 3px; /* нижний отступ больше - резервируем место для уголка ресайза */
+	border:1px solid #539127;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	position: relative; /* нужно обязательно для позиционирования границ, за которые будет тянуть пользователь */
+}
+
+.cuTextWrap .scroll-pane {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.cuTextWrap textarea{
+	width: 100%;
+	height: 50px; /* начальная высота textarea */
+	display: block;
+	overflow:hidden;
+	border:none;
+	background:none;
+}
+.cuTextWrap textarea:focus {
+outline: 0;
+}
+
+/* --- оформление стильной прокрутки  ---*/
+.cuTextWrap .jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.cuTextWrap .jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	height: 100%;
+	background: url(../images/scrollTrak.gif) repeat-y;
+}
+.cuTextWrap .jScrollPaneDrag {
+	position: absolute;
+	background: url(../images/scrollDrag.gif) repeat-y;
+	cursor: pointer;
+	overflow: hidden;
+}
+.cuTextWrap .jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	background: url(../images/scrollDragTop.gif) no-repeat;
+	height:3px;
+}
+.cuTextWrap .jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	background: url(../images/scrollDragBot.gif) no-repeat;
+	height:3px;
+}
+* html .cuTextWrap .jScrollPaneDragBottom {
+	bottom: -1px;
+}
+.cuTextWrap a.jScrollArrowUp {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	height: 18px;
+	background: url(../images/arrow_up.gif) no-repeat;
+}
+
+.cuTextWrap a.jScrollArrowDown {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	height: 18px;
+	background: url(../images/arrow_down.gif) no-repeat;
+}
+
+
+/* стили, используемые плагином resize
+----------------------------------*/
+.ui-resizable-handle {
+	position: absolute;
+	font-size: 0.1px;
+	z-index: 99999;
+	display: block;
+}
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+	display: none;
+}
+
+.ui-resizable-se { /* правый нижний уголок */
+	cursor: se-resize;
+	width: 10px;
+	height: 10px;
+	right: 1px;
+	bottom: 1px;
+	background:url(../images/corner-br.gif) /* фон уголка ресайза */
+}
+

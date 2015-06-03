@@ -1,0 +1,4 @@
+<?
+$MESS["CSST_TEMPLATE_NAME"] = "Jamilco";
+$MESS["CSST_TEMPLATE_DESC"] = "";
+?>

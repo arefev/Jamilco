@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Франчайзинг";
+$arDirProperties = Array(
+
+);
+?>
