@@ -1,0 +1,1 @@
+Компания работает с такими брендами, как BURBERRY, CHAUMET, De Beers, JAEGER, John Lobb, PAULE KA, Salvatore Ferragamo, SONIA RYKIEL, SONIA by SONIA RYKIEL, Vilebrequin, Wolford и многие другие.

@@ -24,7 +24,13 @@
 				);?>
                
                 <div class="f-phone pull-right">
-                    <div class="phone">+7 (495) 705 93 38</div>
+                    <div class="phone">
+						<?$APPLICATION->IncludeFile(
+							SITE_TEMPLATE_PATH."/include/phone.php",
+							Array(),
+							Array("MODE" => "html")
+						);?>
+					</div>
                     <div class="submit">
                         <a data-dialog="feedback" href="javascript:void(0);">Обратная связь</a>
                     </div>
@@ -37,7 +43,13 @@
         <div class="container">
             <div class="fb-l pull-left">
                 <div>
-                    <span class="copyright">© ЗАО «МФК ДжамильКо» 2014.</span>
+                    <span class="copyright">
+						<?$APPLICATION->IncludeFile(
+							SITE_TEMPLATE_PATH."/include/copyright.php",
+							Array(),
+							Array("MODE" => "html")
+						);?>
+					</span>
                 </div>
             </div>
             <div class="fb-c pull-left">
@@ -46,7 +58,11 @@
                 <a class="tw" href="#"></a>
             </div>
             <div class="fb-r text-right pull-right">
-                Дизайн сайта — <a href="#" target="blank">Greensight</a>
+				<?$APPLICATION->IncludeFile(
+					SITE_TEMPLATE_PATH."/include/dev.php",
+					Array(),
+					Array("MODE" => "html")
+				);?>
             </div>
             <div class="clearfix"></div>
         </div>

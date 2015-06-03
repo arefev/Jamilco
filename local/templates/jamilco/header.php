@@ -1,7 +1,4 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<?
-
-?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -38,8 +35,20 @@
 <!-- Begin page content -->
 <div class="header-line">
 	<div class="container">
-		<div class="shops pull-left"><a href="/shops/">Магазины</a></div>
-		<div class="phone pull-left">+7 (495) 705 93 38</div>
+		<div class="shops pull-left">
+			<?$APPLICATION->IncludeFile(
+				SITE_TEMPLATE_PATH."/include/shops_link.php",
+				Array(),
+				Array("MODE" => "html")
+			);?>
+		</div>
+		<div class="phone pull-left">
+			<?$APPLICATION->IncludeFile(
+				SITE_TEMPLATE_PATH."/include/phone.php",
+				Array(),
+				Array("MODE" => "html")
+			);?>
+		</div>
 		<div class="find pull-right">
 			<form action="search.html" method="get" id="search-form">
 				<a href="javascript:void(0);"></a>
@@ -48,8 +57,11 @@
 			<div class="clearfix"></div>
 		</div>
 		<div class="auth-link pull-right"><a data-dialog="authorization"  href="javascript:void(0);"></a></div>
-		<div class="links l2 pull-right"><a href="/wholesale/">оптовые продажи</a></div>
-		<div class="links l1 pull-right"><a href="/franchising/">франчайзинг</a></div>
+		<?$APPLICATION->IncludeFile(
+			SITE_TEMPLATE_PATH."/include/top_links.php",
+			Array(),
+			Array("MODE" => "html")
+		);?>
 		<div class="clearfix"></div>
 	</div>
 </div>
@@ -75,114 +87,70 @@
 );?>
 
 <? if ($APPLICATION->GetCurPage() == "/"): ?>
-	<div class="slider-main">
-		<div class="slider">
-			<div class="sl-item">
-				<div class="img-wrap">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/sl1.jpg" alt=""/>
-				</div>
-				<div class="text">
-					<div class="title">title1</div>
-					<div class="preview">preview1</div>
-					<div class="more"><a href="#">Подробнее</a></div>
-				</div>
-			</div>
-			<div class="sl-item">
-				<div class="img-wrap">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/sl2.jpg" alt=""/>
-				</div>
-				<div class="text">
-					<div class="title">title2</div>
-					<div class="preview">preview2</div>
-					<div class="more"><a href="#">Подробнее</a></div>
-				</div>
-			</div>
-			<div class="sl-item">
-				<div class="img-wrap">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/sl1.jpg" alt=""/>
-				</div>
-				<div class="text">
-					<div class="title">Совершай покупки в NAF NAF и получай подарки!</div>
-					<div class="preview">При покупке 2-х изделий мы рады подарить вам изящную бижутерию, при покупке трех – яркий лак для ногтей, а при покупке 4-х и более – чехол для смартфона!</div>
-					<div class="more"><a href="#">Подробнее</a></div>
-				</div>
-			</div>
-			<div class="sl-item">
-				<div class="img-wrap">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/sl2.jpg" alt=""/>
-				</div>
-					<div class="text">
-						<div class="title">title4</div>
-						<div class="preview">preview4</div>
-						<div class="more"><a href="#">Подробнее</a></div>
-					</div>
-			</div>
-			<div class="sl-item">
-				<div class="img-wrap">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/sl1.jpg" alt=""/>
-				</div>
-					<div class="text">
-						<div class="title">title5</div>
-						<div class="preview">preview5</div>
-						<div class="more"><a href="#">Подробнее</a></div>
-					</div>
-			</div>
-			<div class="sl-item">
-				<div class="img-wrap">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/sl2.jpg" alt=""/>
-				</div>
-					<div class="text">
-						<div class="title">title6</div>
-						<div class="preview">preview6</div>
-						<div class="more"><a href="#">Подробнее</a></div>
-					</div>
-			</div>
-			<div class="sl-item">
-				<div class="img-wrap">
-					<img src="<?=SITE_TEMPLATE_PATH?>/img/sl1.jpg" alt=""/>
-				</div>
-					<div class="text">
-						<div class="title">title7</div>
-						<div class="preview">preview7</div>
-						<div class="more"><a href="#">Подробнее</a></div>
-					</div>
-			</div>
-		</div>
-		<div class="slider-bottom">
-			<div class="mini-slider-l">
-				<div><a data-num="0" class="sl-mini-btn" href="#1">Распродажа в Timberland1</a></div>
-				<div><a data-num="1" class="sl-mini-btn" href="#2">Черный всегда в моде!2</a></div>
-				<div><a data-num="2" class="sl-mini-btn" href="#3">Коллекция SPORT от Juicy Couture3</a></div>
-				<div><a data-num="3" class="sl-mini-btn" href="#4">Скидки от NAF NAF4</a></div>
-				<div><a data-num="4" class="sl-mini-btn" href="#5">Спецпредоложение в Lee Cooper5</a></div>
-				<div><a data-num="5" class="sl-mini-btn" href="#6">Скидка 20% в New Balance6</a></div>
-				<div><a data-num="6" class="sl-mini-btn" href="#7">Открылись два магазина ALDO!7</a></div>
-			</div>
-			<div class="sl-nav"></div>
-			<div class="mini-slider-r">
-				<div><a data-num="0" class="sl-mini-btn" href="#1">Распродажа в Timberland1</a></div>
-				<div><a data-num="1" class="sl-mini-btn" href="#2">Черный всегда в моде!2</a></div>
-				<div><a data-num="2" class="sl-mini-btn" href="#3">Коллекция SPORT от Juicy Couture3</a></div>
-				<div><a data-num="3" class="sl-mini-btn" href="#4">Скидки от NAF NAF4</a></div>
-				<div><a data-num="4" class="sl-mini-btn" href="#5">Спецпредоложение в Lee Cooper5</a></div>
-				<div><a data-num="5" class="sl-mini-btn" href="#6">Скидка 20% в New Balance6</a></div>
-				<div><a data-num="6" class="sl-mini-btn" href="#7">Открылись два магазина ALDO!7</a></div>
-			</div>
-		</div>
-	</div>
+	<?$APPLICATION->IncludeComponent("bitrix:news.list", "main_slider", Array(
+			"IBLOCK_TYPE" => "content",	// Тип информационного блока (используется только для проверки)
+			"IBLOCK_ID" => "3",	// Код информационного блока
+			"NEWS_COUNT" => "20",	// Количество новостей на странице
+			"SORT_BY1" => "ACTIVE_FROM",	// Поле для первой сортировки новостей
+			"SORT_ORDER1" => "DESC",	// Направление для первой сортировки новостей
+			"SORT_BY2" => "SORT",	// Поле для второй сортировки новостей
+			"SORT_ORDER2" => "ASC",	// Направление для второй сортировки новостей
+			"FILTER_NAME" => "",	// Фильтр
+			"FIELD_CODE" => array(	// Поля
+				0 => "",
+			),
+			"PROPERTY_CODE" => array(	// Свойства
+				0 => "TITLE",
+				1 => "",
+			),
+			"CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
+			"DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
+			"AJAX_MODE" => "N",	// Включить режим AJAX
+			"AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
+			"AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
+			"AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
+			"CACHE_TYPE" => "A",	// Тип кеширования
+			"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+			"CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
+			"CACHE_GROUPS" => "Y",	// Учитывать права доступа
+			"PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
+			"ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
+			"SET_TITLE" => "N",	// Устанавливать заголовок страницы
+			"SET_BROWSER_TITLE" => "N",	// Устанавливать заголовок окна браузера
+			"SET_META_KEYWORDS" => "N",	// Устанавливать ключевые слова страницы
+			"SET_META_DESCRIPTION" => "N",	// Устанавливать описание страницы
+			"SET_STATUS_404" => "N",	// Устанавливать статус 404, если не найдены элемент или раздел
+			"INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
+			"ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
+			"HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
+			"PARENT_SECTION" => "",	// ID раздела
+			"PARENT_SECTION_CODE" => "",	// Код раздела
+			"INCLUDE_SUBSECTIONS" => "N",	// Показывать элементы подразделов раздела
+			"DISPLAY_DATE" => "N",	// Выводить дату элемента
+			"DISPLAY_NAME" => "Y",	// Выводить название элемента
+			"DISPLAY_PICTURE" => "Y",	// Выводить изображение для анонса
+			"DISPLAY_PREVIEW_TEXT" => "Y",	// Выводить текст анонса
+			"PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
+			"DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
+			"DISPLAY_BOTTOM_PAGER" => "N",	// Выводить под списком
+			"PAGER_TITLE" => "Новости",	// Название категорий
+			"PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
+			"PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
+			"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
+			"PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
+		),
+		false
+	);?>
 <? endif ?>
 
 <div class="content-wrap">
 	<? if ($APPLICATION->GetCurPage() == "/"): ?>
 		<div class="container">
-			<h1>О компании</h1>
-			<div class="content">
-				<p>Группа компаний «ДжамильКо» начала свою активную деятельность в сфере розничной торговли с 1993 года.
-				На сегодняшний день «ДжамильКо» — один из российских лидеров в области дистрибуции и маркетинга
-				высококачественной модной одежды и аксессуаров от ведущих мировых производителей.
-				</p>
-			</div>
-			<p class="title">Почему именно мы?</p>
+			<?$APPLICATION->IncludeFile(
+				SITE_TEMPLATE_PATH."/include/about_company.php",
+				Array(),
+				Array("MODE" => "html")
+			);?>
 		</div>
 		<div class="slider-why">
 			<div class="container">
@@ -226,12 +194,36 @@
 				</div>
 				<div class="sl-num"><span id="slw-cur">1</span> / <span class="sl-all">4</span></div>
 				<div class="sl-bottom">
-					<div class="swb-item">Группа компаний «ДжамильКо» <br/> основана и вышла на российский рынок товаров класса «люкс» в 1993 году</div>
-					<div class="swb-item">Компания работает с такими брендами, как BURBERRY, CHAUMET, De Beers, JAEGER, John Lobb, PAULE KA, Salvatore Ferragamo, SONIA RYKIEL, SONIA by SONIA RYKIEL, Vilebrequin, Wolford и многие другие.</div>
-					<div class="swb-item">3</div>
-					<div class="swb-item">В конце 2012 года компания «ЛВБ» была признана «Дистрибьютором года» в рамках ежегодной профессиональной премии в области модной индустрии PROFashion Awards 2012.</div>
+					<div class="swb-item">
+						<?$APPLICATION->IncludeFile(
+							SITE_TEMPLATE_PATH."/include/why_1.php",
+							Array(),
+							Array("MODE" => "html")
+						);?>
+					</div>
+					<div class="swb-item">
+						<?$APPLICATION->IncludeFile(
+							SITE_TEMPLATE_PATH."/include/why_2.php",
+							Array(),
+							Array("MODE" => "html")
+						);?>
+					</div>
+					<div class="swb-item">
+						<?$APPLICATION->IncludeFile(
+							SITE_TEMPLATE_PATH."/include/why_3.php",
+							Array(),
+							Array("MODE" => "html")
+						);?>
+					</div>
+					<div class="swb-item">
+						<?$APPLICATION->IncludeFile(
+							SITE_TEMPLATE_PATH."/include/why_4.php",
+							Array(),
+							Array("MODE" => "html")
+						);?>
+					</div>
 				</div>
-				<div class="why-more"><a href="#">Узнать больше о нас</a></div>
+				<div class="why-more"><a href="/about-company/" title="О компании">Узнать больше о нас</a></div>
 			</div>
 		</div>
 		<div class="brands">
@@ -357,11 +349,11 @@
 		<div class="career">
 			<div class="container">
 				<div class="career-inner">
-					<div class="career-title">Карьера</div>
-					<div class="career-text">ИЩЕМ ЯРКИХ ПРОДАВЦОВ-КОНСУЛЬТАНТОВ</div>
-				   <div class="career-mail">Присылайте свои резюме по адресу: hr@jamilco.ru</div>
-				   <div class="career-phone">Телефон отдела по работе с персоналом: +7 495 745 88 95</div>
-					<div class="more"><a href="#">Подробнее</a></div>
+					<?$APPLICATION->IncludeFile(
+						SITE_TEMPLATE_PATH."/include/career.php",
+						Array(),
+						Array("MODE" => "html")
+					);?>
 				</div>
 			</div>
 		</div>
