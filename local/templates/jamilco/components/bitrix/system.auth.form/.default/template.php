@@ -1,5 +1,4 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-
 <?
 if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR']):
 	ShowMessage($arResult['ERROR_MESSAGE']);
@@ -76,9 +75,11 @@ elseif($arResult["FORM_TYPE"] == "otp"):
 <?
 else:
 ?>
+	<center><img src="<?=SITE_TEMPLATE_PATH?>/img/preloader.gif" alt=""/></center>
 	<? if ($_POST['AUTH_FORM'] == 'Y'): ?>
 		<script type="text/javascript">
 			window.location = window.location.href;
 		</script>
 	<? endif ?>
+	
 <?endif?>

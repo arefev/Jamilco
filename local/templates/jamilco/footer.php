@@ -94,28 +94,26 @@
     <div class="dialog__content">
         <div><button class="action" data-dialog-close></button></div>
         <div class="auth-form-wrap">
-            <div class="title">Написать нам</div>
-            <form action="" method="get" id="auth-form1" class="form-horizontal">
-                <div class="form-group" style="">
-                    <label for="form_ext_author_name13" class="control-label">Имя</label>
-                    <input style="" type="text" placeholder="Константин" id="form_ext_author_name13" class="form-control" value="" name="author_name">
-                </div>
-                <div class="form-group" style="">
-                    <label for="form_ext_author_name12" class="control-label">Эл. почта</label>
-                    <input style="" type="text" id="form_ext_author_name12" class="form-control" value="" name="author_name">
-                </div>
-                <div class="form-group" style="">
-                    <label for="form_ext_author_name123" class="control-label">Телефон</label>
-                    <input style="" type="text" id="form_ext_author_name123" class="form-control" value="" name="author_name">
-                </div>
-                <div class="form-group" style="">
-                    <label for="form_ext_author_name123" class="control-label">Сообщение</label>
-                    <textarea class="form-control" name="text" id="qwerty"></textarea>
-                </div>
-                <div class="submit">
-                    <input type="submit" name="submit" id="" value="Войти">
-                </div>
-            </form>
+            <?$APPLICATION->IncludeComponent("bitrix:form.result.new", "feedback", Array(
+					"WEB_FORM_ID" => "1",	// ID веб-формы
+					"IGNORE_CUSTOM_TEMPLATE" => "Y",	// Игнорировать свой шаблон
+					"USE_EXTENDED_ERRORS" => "N",	// Использовать расширенный вывод сообщений об ошибках
+					"SEF_MODE" => "N",	// Включить поддержку ЧПУ
+					"CACHE_TYPE" => "A",	// Тип кеширования
+					"CACHE_TIME" => "3600",	// Время кеширования (сек.)
+					"LIST_URL" => "",	// Страница со списком результатов
+					"EDIT_URL" => "",	// Страница редактирования результата
+					"SUCCESS_URL" => "",	// Страница с сообщением об успешной отправке
+					"CHAIN_ITEM_TEXT" => "",	// Название дополнительного пункта в навигационной цепочке
+					"CHAIN_ITEM_LINK" => "",	// Ссылка на дополнительном пункте в навигационной цепочке
+					"SEF_FOLDER" => "/about-company/",	// Каталог ЧПУ (относительно корня сайта)
+					"VARIABLE_ALIASES" => array(
+						"WEB_FORM_ID" => "WEB_FORM_ID",
+						"RESULT_ID" => "RESULT_ID",
+					)
+				),
+				false
+			);?>
         </div>
     </div>
 </div>

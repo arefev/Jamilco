@@ -35,6 +35,22 @@ $(function(){
 		return false;
 	});
 	
+	$('#feedback').on('submit', 'form', function(){
+		var	submit = $(this).find("input[type=submit]").attr("name"),
+			data = $(this).serialize() + '&' + submit + '=Y';
+			
+		$.ajax({
+			type: "POST",
+			url: '/ajax/feedback.php',
+			data: data,
+			success: function(result){
+				$('#feedback .auth-form-wrap').html(result);
+			},
+			dataType: 'html'
+		});
+		return false;
+	});
+	
     $('#search-form a').click(function(){
         var mw = 179;
         var inpt = $(this).siblings("input");
