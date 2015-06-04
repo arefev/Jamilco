@@ -3338,3 +3338,6 @@ a:focus {
   font-size: 16px;
   font-family: 'segoeui', Arial, sans-serif;
 }
+.errortext {
+	color:red;
+}

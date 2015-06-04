@@ -56,7 +56,9 @@
 			</form>
 			<div class="clearfix"></div>
 		</div>
-		<div class="auth-link pull-right"><a data-dialog="authorization"  href="javascript:void(0);"></a></div>
+		<? if (!$USER->IsAuthorized()): ?>
+			<div class="auth-link pull-right"><a data-dialog="authorization"  href="javascript:void(0);"></a></div>
+		<? endif ?>
 		<?$APPLICATION->IncludeFile(
 			SITE_TEMPLATE_PATH."/include/top_links.php",
 			Array(),

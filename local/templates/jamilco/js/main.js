@@ -21,6 +21,20 @@ function bindHover(els){
     });
 }
 $(function(){
+	$('#authorization').on('submit', 'form', function(){
+		var data = $(this).serialize();
+		$.ajax({
+			type: "POST",
+			url: '/ajax/auth.php',
+			data: data,
+			success: function(result){
+				$('#authorization .auth-form-wrap__container').html(result);
+			},
+			dataType: 'html'
+		});
+		return false;
+	});
+	
     $('#search-form a').click(function(){
         var mw = 179;
         var inpt = $(this).siblings("input");

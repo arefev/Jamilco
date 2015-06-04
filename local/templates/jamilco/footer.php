@@ -68,28 +68,27 @@
         </div>
     </div>
 </div>
-<div id="authorization" class="dialog">
-    <div class="dialog__overlay"></div>
-    <div class="dialog__content">
-        <div><button class="action" data-dialog-close></button></div>
-        <div class="auth-form-wrap">
-            <div class="title">личный кабинет</div>
-            <form action="" method="get" id="auth-form" class="form-horizontal">
-                <div class="form-group" style="">
-                    <label for="form_ext_author_name" class="control-label">№ карты</label>
-                    <input style="" type="text" placeholder="12345" id="form_ext_author_name" class="form-control" value="" name="author_name">
-                </div>
-                <div class="form-group" style="">
-                    <label for="form_ext_author_name1" class="control-label">PIN</label>
-                    <input style="" type="text" placeholder="12345" id="form_ext_author_name1" class="form-control" value="" name="author_name">
-                </div>
-                <div class="submit">
-                    <input type="submit" name="submit" id="" value="Войти">
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
+<? if (!$USER->IsAuthorized()): ?>
+	<div id="authorization" class="dialog">
+		<div class="dialog__overlay"></div>
+		<div class="dialog__content">
+			<div><button class="action" data-dialog-close></button></div>
+			<div class="auth-form-wrap">
+				<div class="title">личный кабинет</div>
+				<div class="auth-form-wrap__container">
+					<?$APPLICATION->IncludeComponent("bitrix:system.auth.form", ".default", Array(
+							"REGISTER_URL" => "",	// Страница регистрации
+							"FORGOT_PASSWORD_URL" => "",	// Страница забытого пароля
+							"PROFILE_URL" => "",	// Страница профиля
+							"SHOW_ERRORS" => "Y",	// Показывать ошибки
+						),
+						false
+					);?>
+				</div>
+			</div>
+		</div>
+	</div>
+<? endif ?>
 <div id="feedback" class="dialog">
     <div class="dialog__overlay"></div>
     <div class="dialog__content">
